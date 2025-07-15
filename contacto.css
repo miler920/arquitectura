@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #800020;
+  --primary-dark: #4B0000;
+}
+
+.contact-input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  background-color: #f9fafb;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.contact-input:focus {
+  border-color: var(--primary-color);
+  background-color: #fff;
+  outline: none;
+}
+
+.btn-submit {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: var(--primary-dark);
+}

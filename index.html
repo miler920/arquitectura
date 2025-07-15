@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura de Plataformas y Servicios de Tecnologías de la Información</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col ">
+    <!-- Decorative elements -->
+<div class="decoration-element top-0 left-0 transform -translate-x-1/2 -translate-y-1/2"></div>
+<div class="decoration-element bottom-0 right-0 transform translate-x-1/2 translate-y-1/2"></div>
+
+<header class="fixed w-full text-white z-50 shadow-lg" style="background-color: #800020;">
+  <div class="container mx-auto px-4 py-3">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center">
+        <i class=""></i>
+          <!-- Logo de imagen -->
+          <img src="/img/apsti.png" alt="Logo" class="h-20 w-20 mr-2 rounded-full">
+        <span class="font-heading font-bold text-xl">APSTI</span>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#inicio" class="font-medium hover:text-accent transition duration-300">Inicio</a>
+        <a href="#servicios" class="font-medium hover:text-accent transition duration-300">Servicios</a>
+       <a href="contacto.html" class="font-medium hover:text-accent transition duration-300">Contacto</a> 
+        <a href="#proyectos" class="font-medium hover:text-accent transition duration-300">Proyectos</a>
+      </nav>
+
+      <!-- Mobile Navigation Toggle -->
+      <div class="md:hidden hamburger" id="mobile-menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+      
+          <!-- Mobile Navigation Menu -->
+          <div id="mobile-menu" class="md:hidden hidden bg-primary mt-3 pb-4 rounded-b-lg">
+            <nav class="flex flex-col space-y-3 px-2">
+              <a href="#inicio" class="font-medium hover:text-accent transition duration-300 py-2">Inicio</a>
+              <a href="#servicios" class="font-medium hover:text-accent transition duration-300 py-2">Servicios</a>
+              <a href="#contacto" class="font-medium hover:text-accent transition duration-300 py-2">Contacto</a>
+              <a href="#proyectos" class="font-medium hover:text-accent transition duration-300 py-2">Proyectos</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      
+    
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section min-h-screen flex items-center justify-center text-white pt-16 bg-black">
+      <div class="container mx-auto px-4 py-20 text-center reveal">
+        <h1 class="fuzzy-text mb-6 text-4xl md:text-6xl font-heading leading-tight">
+            Arquitectura de Plataformas y<br>Servicios de TI</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Diseñamos e implementamos soluciones tecnológicas innovadoras para impulsar el crecimiento y la transformación digital de su organización.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+              <a href="sobre-nosotros.html" class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white transition duration-300 py-3 px-8 rounded-md font-medium text-lg">
+                Más Sobre Nosotros
+              </a>
+              
+            
+              </a>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section id="servicios" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        
+        <!-- Título -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Nuestros Servicios</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Brindamos soluciones integrales en arquitectura de plataformas y servicios de tecnologías de la información, optimizando la infraestructura, conectividad y operación digital de las organizaciones.
+          </p>
+        </div>
+    
+        <!-- Contenedor general: imagen + servicios -->
+        <div class="flex flex-col lg:flex-row items-start justify-between gap-10">
+    
+          <!-- Imagen a la izquierda -->
+          <div id="imagen-izquierda" class="lg:w-1/3 mb-10 lg:mb-0 transform transition-all duration-[1500ms] ease-in-out translate-x-0 opacity-100" data-aos="fade-right">
+            <img src="/img/foto-removebg-preview.png" alt="Persona" class="img-alta mx-auto bg-transparent">
+          </div>
+    
+          <!-- Servicios a la derecha -->
+          <div class="lg:w-2/3">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+    
+              <!-- Servicio 1 -->
+              <div class="bg-teal-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up">
+                <img src="/img/-infraestructura-en-la-nube.jpg" alt="Infraestructura en la nube" class="mb-4 rounded-md w-full h-48 object-cover">
+                <h3 class="text-xl font-semibold mb-2 text-teal-700">Infraestructura en la nube</h3>
+                <p class="text-gray-700">Diseño, implementación y administración de soluciones en la nube, escalables y seguras para entornos corporativos.</p>
+              </div>
+    
+              <!-- Servicio 2 -->
+              <div class="bg-cyan-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                <img src="/img/migracion.jpeg" alt="Migración a la nube" class="mb-4 rounded-md w-full h-48 object-cover">
+                <h3 class="text-xl font-semibold mb-2 text-cyan-700">Migración de plataformas</h3>
+                <p class="text-gray-700">Migración de plataformas y servicios TI a entornos virtuales, garantizando continuidad, rendimiento y disponibilidad.</p>
+              </div>
+    
+              <!-- Servicio 3 -->
+              <div class="bg-indigo-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                <img src="/img/redes_de_computadores.jpg" alt="Redes y Conectividad" class="mb-4 rounded-md w-full h-48 object-cover">
+                <h3 class="text-xl font-semibold mb-2 text-indigo-700">Redes y Conectividad</h3>
+                <p class="text-gray-700">Diseño e implementación de redes eficientes para mejorar el acceso, la seguridad y la comunicación organizacional.</p>
+              </div>
+    
+              <!-- Servicio 4 -->
+              <div class="bg-purple-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                <img src="/img/4.jpg" alt="Desarrollo de Software" class="mb-4 rounded-md w-full h-48 object-cover">
+                <h3 class="text-xl font-semibold mb-2 text-purple-700">Soluciones Digitales</h3>
+                <p class="text-gray-700">Desarrollo de software, plataformas web y móviles para automatizar procesos y mejorar la experiencia del usuario.</p>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    <!-- Proyectos Section -->
+<section id="proyectos" class="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16 reveal">
+      <h2 class="text-4xl font-bold font-heading text-gray-800 mb-4">PROYECTOS</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Descubre los tipos de proyectos que puedes desarrollar aplicando tus conocimientos en tecnologías de la información.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Proyecto 1 -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden reveal">
+        <img src="/img/opti.jpg" alt="Optimización de servidores" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-blue-700 mb-2">Optimización de servidores</h3>
+          <p class="text-gray-700">Proyecto académico de rediseño y mejora del rendimiento de servidores para entornos educativos y empresariales.</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden reveal">
+        <img src="/img/161-1371x800.jpg" alt="Implementación de IoT" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-green-700 mb-2">Implementación de IoT</h3>
+          <p class="text-gray-700">Desarrollo de soluciones IoT con sensores y microcontroladores para monitoreo ambiental en instituciones educativas.</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden reveal">
+        <img src="/img/nube-hibrida.jpg" alt="Migración a la nube híbrida" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-purple-700 mb-2">Migración a la nube híbrida</h3>
+          <p class="text-gray-700">Implementación de infraestructura híbrida utilizando plataformas cloud para simular entornos empresariales.</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 4 -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden reveal">
+        <img src="/img/automatizacion-proce.jpeg" alt="Automatización de procesos" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-yellow-600 mb-2">Automatización de procesos</h3>
+          <p class="text-gray-700">Aplicación de herramientas RPA para automatizar tareas administrativas y operativas en entornos simulados.</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 5 -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden reveal">
+        <img src="/img/4430-Tipos-.jpg" alt="Plataforma de e-commerce" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-pink-700 mb-2">Plataforma de e-commerce</h3>
+          <p class="text-gray-700">Desarrollo de tiendas en línea utilizando frameworks web y bases de datos para gestión de productos y usuarios.</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 6 -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden reveal">
+        <img src="/img/consejos-ciberseguridad-contra-las-amenazas-de-la-red.jpg" alt="Seguridad informática" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-teal-700 mb-2">Seguridad informática</h3>
+          <p class="text-gray-700">Evaluación de vulnerabilidades y aplicación de buenas prácticas de seguridad en redes institucionales.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <br>
+
+
+    
+    <!-- Footer Modernizado -->
+<footer class="bg-[#4B0000] text-white py-16">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+      
+      <!-- Marca -->
+      <div>
+        <div class="flex items-center mb-4">
+          <i class="fas fa-layer-group text-2xl text-emerald-400 mr-2"></i>
+          <span class="text-2xl font-bold font-heading">ArquiTech</span>
+        </div>
+        <p class="text-gray-300">Soluciones innovadoras en arquitectura de plataformas y servicios tecnológicos.</p>
+        <div class="mt-6 flex space-x-4">
+          <a href="https://facebook.com" target="_blank" class="h-10 w-10 bg-emerald-500 hover:bg-emerald-600 rounded-full flex items-center justify-center transition duration-300">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="h-10 w-10 bg-emerald-500 hover:bg-emerald-600 rounded-full flex items-center justify-center transition duration-300">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="h-10 w-10 bg-emerald-500 hover:bg-emerald-600 rounded-full flex items-center justify-center transition duration-300">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="h-10 w-10 bg-emerald-500 hover:bg-emerald-600 rounded-full flex items-center justify-center transition duration-300">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Enlaces Rápidos -->
+      <div>
+        <h3 class="font-bold text-lg mb-4">Enlaces Rápidos</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="index.html" class="hover:text-white transition">Inicio</a></li>
+          <li><a href="#servicios" class="hover:text-white transition">Servicios</a></li>
+          <li><a href="#proyectos" class="hover:text-white transition">Proyectos</a></li>
+          <li><a href="contacto.html" class="hover:text-white transition">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Servicios -->
+      <div>
+        <h3 class="font-bold text-lg mb-4">Servicios</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="#proyectos" class="hover:text-white transition">Optimización de servidores</a></li>
+          <li><a href="#proyectos" class="hover:text-white transition">Implementación de IoT</a></li>
+          <li><a href="#proyectos" class="hover:text-white transition">Migración a la nube híbrida</a></li>
+          <li><a href="#proyectos" class="hover:text-white transition">Automatización de procesos</a></li>
+          <li><a href="#proyectos" class="hover:text-white transition">Plataforma de e-commerce</a></li>
+          <li><a href="#proyectos" class="hover:text-white transition">Seguridad informática</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div>
+        <h3 class="font-bold text-lg mb-4">Contacto</h3>
+        <ul class="space-y-4 text-gray-300">
+          <li class="flex"><i class="fas fa-map-marker-alt text-emerald-400 mr-3 mt-1"></i>Jr. José Gálvez s/n y Calle N° 02, Pichanaki</li>
+          <li class="flex"><i class="fas fa-envelope text-emerald-400 mr-3 mt-1"></i>contacto@arquitech.com</li>
+          <li class="flex"><i class="fas fa-phone text-emerald-400 mr-3 mt-1"></i>+123 456 7890</li>
+          <li class="flex"><i class="fas fa-clock text-emerald-400 mr-3 mt-1"></i>Lunes - Viernes: 8:00 - 2:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="my-10 border-gray-700">
+
+    <!-- Derechos y enlaces legales -->
+    <div class="flex flex-col md:flex-row justify-between items-center text-gray-400">
+      <p>© 2025 ArquiTech. Todos los derechos reservados.</p>
+      <div class="mt-4 md:mt-0">
+        <a href="javascript:void(0)" class="hover:text-white mr-4 transition">Términos y Condiciones</a>
+        <a href="javascript:void(0)" class="hover:text-white transition">Política de Privacidad</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> 
+
+
+
+      <script src="script.js"></script>
+  </section>
+  </body>
+  <script>
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+    
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+    
+  </html>

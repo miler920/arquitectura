@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | ArquiTech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contacto.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* CSS para la sección de contacto */
+        .contact-section {
+            background: linear-gradient(to right, #4B0000, #800020);
+            color: white;
+        }
+        .contact-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        .form-input {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            transition: border-color 0.3s;
+        }
+        .form-input:focus {
+            border-color: #800020;
+            outline: none;
+        }
+        .submit-button {
+            background-color: #800020;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-button:hover {
+            background-color: #4B0000;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col ">
+    <!-- Decorative elements -->
+    <div class="decoration-element top-0 left-0 transform -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="decoration-element bottom-0 right-0 transform translate-x-1/2 translate-y-1/2"></div>
+
+    <header class="fixed w-full text-white z-50 shadow-lg" style="background-color: #800020;">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="/img/apsti.png" alt="Logo" class="h-20 w-20 mr-2 rounded-full">
+                    <span class="font-heading font-bold text-xl">APSTI</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html" class="font-medium hover:text-accent transition duration-300">Inicio</a>
+                    <a href="#servicios" class="font-medium hover:text-accent transition duration-300">Servicios</a>
+                    <a href="contacto.html" class="font-medium hover:text-accent transition duration-300">Contacto</a>
+                    <a href="#proyectos" class="font-medium hover:text-accent transition duration-300">Proyectos</a>
+                </nav>
+
+                <!-- Mobile Navigation Toggle -->
+                <div class="md:hidden hamburger" id="mobile-menu-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-primary mt-3 pb-4 rounded-b-lg">
+        <nav class="flex flex-col space-y-3 px-2">
+            <a href="index.html" class="font-medium hover:text-accent transition duration-300 py-2">Inicio</a>
+            <a href="#servicios" class="font-medium hover:text-accent transition duration-300 py-2">Servicios</a>
+            <a href="contacto.html" class="font-medium hover:text-accent transition duration-300 py-2">Contacto</a>
+            <a href="#proyectos" class="font-medium hover:text-accent transition duration-300 py-2">Proyectos</a>
+        </nav>
+    </div>
+       <br>
+       <br>
+     
+       
+    <!-- Nueva Sección de Contacto Profesional -->
+<section id="contacto" class="relative py-24 bg-gradient-to-tr from-gray-100 to-white overflow-hidden">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      
+      <!-- Texto e Información -->
+      <div data-aos="fade-right">
+        <h2 class="text-4xl font-bold mb-4 text-gray-800">Ponte en contacto con nosotros</h2>
+        <p class="text-gray-600 text-lg mb-6">¿Tienes alguna pregunta sobre nuestros servicios o deseas solicitar una consultoría? Completa el formulario o comunícate directamente.</p>
+
+        <ul class="space-y-4 text-base text-gray-700">
+          <li class="flex items-start">
+            <i class="fas fa-map-marker-alt text-primary mr-3 mt-1 text-xl"></i>
+            Jr. José Gálvez s/n y Calle N° 02, Pichanaki
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-envelope text-primary mr-3 mt-1 text-xl"></i>
+            contacto@arquitech.com
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-phone text-primary mr-3 mt-1 text-xl"></i>
+            +123 456 7890
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-clock text-primary mr-3 mt-1 text-xl"></i>
+            Lunes a Viernes, 8:00 a 14:00 hrs.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Formulario -->
+      <div data-aos="fade-left">
+        <div class="bg-white rounded-2xl shadow-2xl p-8">
+          <form class="space-y-6" id="contact-form" novalidate>
+            <div>
+              <label class="block font-medium mb-1 text-gray-700">Nombre completo</label>
+              <input type="text" name="name" class="contact-input" required>
+            </div>
+
+            <div>
+              <label class="block font-medium mb-1 text-gray-700">Correo electrónico</label>
+              <input type="email" name="email" class="contact-input" required>
+            </div>
+
+            <div>
+              <label class="block font-medium mb-1 text-gray-700">Asunto</label>
+              <input type="text" name="subject" class="contact-input" required>
+            </div>
+
+            <div>
+              <label class="block font-medium mb-1 text-gray-700">Mensaje</label>
+              <textarea name="message" rows="4" class="contact-input" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit w-full">
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+   <!-- Sección de Mapa más dinámica -->
+<section class="py-20 bg-white" data-aos="fade-up">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Nuestra Ubicación</h2>
+    <div class="relative overflow-hidden rounded-2xl shadow-xl aspect-video">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.279901134!2d-74.2598656874519!3d40.69767006351351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1c1c1c1c1c%3A0x1c1c1c1c1c1c1c1!2sJr.%20José%20Gálvez%20s/n%20y%20Calle%20N%C2%B0%2002%2C%20Pichanaki!5e0!3m2!1ses!2spe!4v1631234567890!5m2!1ses!2spe"
+        class="w-full h-full border-0"
+        loading="lazy"
+        allowfullscreen=""
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+<section class="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-10" data-aos="fade-up">Preguntas Frecuentes</h2>
+    
+    <div class="space-y-4">
+      <!-- FAQ Item -->
+      <div class="faq-item bg-white rounded-xl shadow-md p-6 cursor-pointer transition-all duration-300" onclick="toggleFAQ(this)">
+        <h3 class="font-semibold text-lg flex justify-between items-center">
+          <span>¿Cuáles son los horarios de atención?</span>
+          <i class="fas fa-chevron-down rotate-icon transition-transform duration-300"></i>
+        </h3>
+        <div class="faq-answer mt-2 text-gray-600 hidden">
+          Atendemos de lunes a viernes, de 8:00 a 14:00 horas.
+        </div>
+      </div>
+
+      <div class="faq-item bg-white rounded-xl shadow-md p-6 cursor-pointer transition-all duration-300" onclick="toggleFAQ(this)">
+        <h3 class="font-semibold text-lg flex justify-between items-center">
+          <span>¿Ofrecen soporte técnico?</span>
+          <i class="fas fa-chevron-down rotate-icon transition-transform duration-300"></i>
+        </h3>
+        <div class="faq-answer mt-2 text-gray-600 hidden">
+          Sí, ofrecemos soporte técnico para todos nuestros servicios. Puedes contactarnos a través del formulario o por teléfono.
+        </div>
+      </div>
+
+      <div class="faq-item bg-white rounded-xl shadow-md p-6 cursor-pointer transition-all duration-300" onclick="toggleFAQ(this)">
+        <h3 class="font-semibold text-lg flex justify-between items-center">
+          <span>¿Cómo puedo solicitar un servicio?</span>
+          <i class="fas fa-chevron-down rotate-icon transition-transform duration-300"></i>
+        </h3>
+        <div class="faq-answer mt-2 text-gray-600 hidden">
+          Puedes solicitar un servicio a través del formulario de contacto en esta página o llamándonos directamente.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer Modernizado -->
+    <footer class="bg-[#4B0000] text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <!-- Marca -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-layer-group text-2xl text-emerald-400 mr-2"></i>
+                        <span class="text-2xl font-bold font-heading">ArquiTech</span>
+                    </div>
+                    <p class="text-gray-300">Soluciones innovadoras en arquitectura de plataformas y servicios tecnológicos.</p>
+                    <div class="mt-6 flex space-x-4">
+                        <a href="https://facebook.com" target="_blank" class="h-10 w-10 bg-emerald-500 hover:bg-emerald-600 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="h-10 w-10 bg-emerald-500 hover:bg-emerald-600 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="h-10 w-10 bg-emerald-500 hover:bg-emerald-600 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="h-10 w-10 bg-emerald-500 hover:bg-emerald-600 rounded-full flex items-center justify-center transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Enlaces Rápidos -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#inicio" class="hover:text-white transition">Inicio</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition">Servicios</a></li>
+                        <li><a href="#proyectos" class="hover:text-white transition">Proyectos</a></li>
+                        <li><a href="#contacto" class="hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Servicios -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Servicios</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#proyectos" class="hover:text-white transition">Optimización de servidores</a></li>
+                        <li><a href="#proyectos" class="hover:text-white transition">Implementación de IoT</a></li>
+                        <li><a href="#proyectos" class="hover:text-white transition">Migración a la nube híbrida</a></li>
+                        <li><a href="#proyectos" class="hover:text-white transition">Automatización de procesos</a></li>
+                        <li><a href="#proyectos" class="hover:text-white transition">Plataforma de e-commerce</a></li>
+                        <li><a href="#proyectos" class="hover:text-white transition">Seguridad informática</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Contacto</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex"><i class="fas fa-map-marker-alt text-emerald-400 mr-3 mt-1"></i>Jr. José Gálvez s/n y Calle N° 02, Pichanaki</li>
+                        <li class="flex"><i class="fas fa-envelope text-emerald-400 mr-3 mt-1"></i>contacto@arquitech.com</li>
+                        <li class="flex"><i class="fas fa-phone text-emerald-400 mr-3 mt-1"></i>+123 456 7890</li>
+                        <li class="flex"><i class="fas fa-clock text-emerald-400 mr-3 mt-1"></i>Lunes - Viernes: 8:00 - 2:00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="my-10 border-gray-700">
+
+            <!-- Derechos y enlaces legales -->
+            <div class="flex flex-col md:flex-row justify-between items-center text-gray-400">
+                <p>© 2025 ArquiTech. Todos los derechos reservados.</p>
+                <div class="mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="hover:text-white mr-4 transition">Términos y Condiciones</a>
+                    <a href="javascript:void(0)" class="hover:text-white transition">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="contacto.js"></script>
+    <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
